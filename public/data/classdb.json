@@ -1,0 +1,18 @@
+{"docs":[
+{"_id":"blow dryer","msgid":"id-smallhe"},
+{"_id":"cadmium cell","msgid":"id-hazardous"},
+{"_id":"can","msgid":"id-cans"},
+{"_id":"digital compute","msgid":"id-pcrecycle"},
+{"_id":"dry battery","msgid":"id-hazardous"},
+{"_id":"dryer","msgid":"id-smallhe"},
+{"_id":"electric battery","msgid":"id-hazardous"},
+{"_id":"glass_bottle","msgid":"id-glassbottles"},
+{"_id":"glassbottle","msgid":"id-glassbottles"},
+{"_id":"light bulb","msgid":"id-nonburnt"},
+{"_id":"notebook computer","msgid":"id-pcrecycle"},
+{"_id":"personal computer","msgid":"id-pcrecycle"},
+{"_id":"pet_bottle","msgid":"id-petbottles"},
+{"_id":"petbottle","msgid":"id-petbottles"},
+{"_id":"portable computer","msgid":"id-pcrecycle"},
+{"_id":"smoothing iron","msgid":"id-smallhe"}
+]}

@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: h2cg
+  host: h2cg
+  disk_quota: 1024M
+  env:
+    CLASSIFIER_IDS: default,garbage_separator_182413734
+    CHANNEL_ACCESS_TOKEN: 5wwg26mOvLlifcEC13PnXhxd0nfxQmtT/+YIeSDXNeVQJU6beMYQDmDM3sGqArsR8ojf9aUGX8TssAODiWnfxshs7CIOfnNaUv5kNOS6eOpnJbwQlOE0p2vFGrNGW8ZKoYsuPgFmDyYZEaNtroZ0MAdB04t89/1O/w1cDnyilFU=
+  services:
+    - Cloudant-gb
+    - watson-vision-combined-qk

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>認識結果</title>
+</head>
+<body>
+	<h2>認識結果</h2>
+	<table border="1" cellpadding="0" cellspacing="0">
+		<tr><th>送信された画像</th><th>識別した結果</th></tr>
+		<tr>
+			<td align="center"><img src="data:<%- type %>;base64,<%- image %>" width="50%" height="auto"/></td>
+			<td align="center">
+				<table border="1" cellpadding="0" cellspacing="0">
+					<tr><th nowrap>分類</th><th nowrap>確信度</th><th nowrap>分別区分</th><th nowrap>ゴミの種類</th></tr>
+					<% for (var i=0; i<classes.length; i++) { %>
+						<tr><td nowrap><%= classes[i] %></td><td nowrap><%= scores[i] %></td><td nowrap><%= messages[i].msgid %></td><td nowrap><%= messages[i].kind %></td></tr>
+					<% } %>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<br><br>
+	<h2>ゴミの捨て方</h2>
+	<table border="1" cellpadding="0" cellspacing="0">
+		<tr><th nowrap>ゴミの種類</th><th nowrap>捨て方</th></tr>
+		<% for(var i=0; i<sumMsgs.length;i++){ %>
+			<tr><td nowarp><%= sumMsgs[i].kind %></td><td nowarp><%= sumMsgs[i].description %></td></tr>
+		<% } %>
+	</table>
+	<br><br>
+	<a href="/">戻る</a>
+</body>
+</html>
